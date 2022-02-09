@@ -2,8 +2,8 @@
 
 ## HTML5
 
-* É Linguagem da Web
-* Significa HyperText Markup Language
+* É a Linguagem da Web.
+* Significa HyperText Markup Language.
 * Traduzindo Linguagem de Marcação de Hipertexto.
 * NÃO É linguagem de programação.
 * É uma linguagem de marcação ou estruturação de documentos.
@@ -49,7 +49,7 @@
 <head> <!-- abertura do head - cabeça html -->
     <meta charset="UTF-8"> <!-- tag meta define mapa de caracteres UTF-8 -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- compatibilidade com IE -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- definir área visivel largura -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- área visivel largura -->
     <title>Projeto 01</title> <!-- título da página -->
 </head> <!-- fim do head - cabeça html -->
 
