@@ -17,8 +17,14 @@ de busca.
 * aside
 * footer
 * div
+* a
 
 ### Nem tudo é div
 
 * Antigamente utilizamos div para separar conteúdos, porém, atualmente
 utilizamos as outras tags para organizar os conteúdos das páginas de forma semântica.
+
+### Links
+* Podemos fazer links internos e links externos.
+* Use o atributo id para criar âncoras (links) internos.
+* No atributo href do link use #nomeDoId
