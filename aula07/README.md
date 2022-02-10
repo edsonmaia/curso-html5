@@ -1,6 +1,6 @@
 # Curso de HTML 5
 
-## Aula 06 - Drop down com details e summary no HTML5
+## Aula 07 - Drop down com details e summary no HTML5
 
 1. Dentro do arquivo semantica.html
 2. Dentro da div criamos details e summary

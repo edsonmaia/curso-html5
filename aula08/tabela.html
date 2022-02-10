@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+</head>
+
+<body>
+
+<h1>Tabelas</h1>
+
+<h2>Tabela comum</h2>
+
+<table width="250px">
+
+    <caption>Dados Pessoais</caption>
+
+    <tr>
+        <th>Nome</th> <th>Idade</th>
+    </tr>
+    <tr>
+        <td>Edson</td> <td>40</td>
+    </tr>
+    <tr>
+        <td>Maria</td> <td>66</td>
+    </tr>
+
+</table>
+
+<h2>Tabela com colspan</h2>
+
+<table border="1" width="250px">
+
+    <caption>Agenda</caption>
+
+    <tr>
+        <th>Nome</th> <th colspan="2">Telefones</th>
+    </tr>
+    <tr>
+        <td>Edson</td> <td>96 99888-1122</td> <td>96 99888-3344</td>
+    </tr>
+    <tr>
+        <td>Maria</td> <td>96 99888-7766</td> <td>96 99888-5544</td>
+    </tr>
+
+</table>
+
+<h2>Tabela com rowspan</h2>
+
+<table border="1" width="250px">
+    <!-- thead, tbody, tfoot -->
+    <caption>Notas Bimestrais</caption>
+    <thead>
+        <tr>
+            <th>Bimestre</th> <th>Disciplina</th> <th>Nota</th>
+        </tr>
+        
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="4">1</td> <td>Geografia</td> <td>10.0</td>
+        </tr>
+        <tr>
+            <td>História</td> <td>9.5</td>
+        </tr>
+        <tr>
+            <td>Artes</td> <td>8.0</td>
+        </tr>
+        <tr>
+            <td>Português</td> <td>7.5</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Tabela com espaçamentos</h2>
+
+<table border="1" width="400px" cellpadding="15" cellspacing="0">
+
+    <caption>Dados Pessoais</caption>
+
+    <tr>
+        <th>Nome</th> <th>Idade</th>
+    </tr>
+    <tr>
+        <td>Edson</td> <td>40</td>
+    </tr>
+    <tr>
+        <td>Maria</td> <td>66</td>
+    </tr>
+
+</table>
+
+<h2>Mais tabela</h2>
+
+<table border="1" cellpadding="5" cellspacing="10" width="400px">
+
+    <caption>Rendimentos Mensais</caption>
+    
+    <tr>
+        <th>Mês</th>
+        <th>Rendimentos</th>
+    </tr>
+    <tr>
+        <td>Janeiro</td>
+        <td>R$ 100 </td>
+    </tr>
+    <tr>
+        <td>Fevereiro</td>
+        <td>R$ $80 </td>
+    </tr>
+</table>
+
+</body>
+
+</html>
