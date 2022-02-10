@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+
+    <h1>Formulário</h1>
+    
+    <!-- enctype="multipart/form-data" -->
+    <!-- method="POST" ou method="GET" -->
+
+    <form id="form" action="" method="POST" enctype="multipart/form-data" >
+
+        <div> <!-- tipo text -->
+            <label for="nome">Nome</label>
+            <input
+                type="text"
+                name="nome"
+                id="nome"
+                size="30"
+                maxlength="20"
+                required
+                autofocus
+            />
+        </div>
+
+            <br/>
+
+        <div> <!-- tipo password -->
+            <label for="senha">Senha</label>
+            <input
+                type="password"
+                name="senha"
+                id="senha"
+                size="10"
+                maxlength="8"
+            />
+        </div>
+
+            <br/>
+
+        <div> <!-- tipo text e number -->
+            <label for="endereco">Endereço</label>
+            <input
+                type="text"
+                name="endereco"
+                id="endereco"
+                size="50"
+            />
+            <input
+                type="number"
+                name="numero"
+                id="numero"
+                step="1"
+                min="1"
+                max="9999"
+            />
+            <!-- readonly -->
+            <!-- disabled -->
+        </div>
+
+            <br/>
+
+        <div> <!-- tipo textarea -->
+            <label for="obs">Observações</label> <br/>
+            <textarea
+                name="obs"
+                id="obs"
+                cols="50"
+                rows="3"
+                placeholder="Observações..."></textarea>
+        </div>
+
+            <br/>
+
+        <div> <!-- tipo color -->
+            <label for="cor">Cor:</label>
+            <input
+                type="color"
+                name="cor"
+                id="cor"
+            />
+        </div>
+
+            <br/>
+
+        <div> <!-- tipo range -->
+            <label for="valor">Valor (entre 0 e 50):</label>
+            <input
+                type="range"
+                name="valor"
+                id="valor"
+                min="0"
+                max="50"
+            />
+        </div>
+
+            <br/>
+
+        <div> <!-- tipo search -->
+            <label for="pesquisar">Pesquisar:</label>
+            <input
+                type="search"
+                name="pesquisar"
+                id="pesquisar"
+            />
+        </div>
+
+            <br/>
+
+        <div> <!-- tipo date -->
+            <label for="data">Data:</label>
+            <input
+                type="date"
+                name="data"
+                id="data"
+            />
+        </div>
+
+            <br/>
+
+        <div> <!-- tipo file -->
+            <label for="arquivo">Selecione um arquivo:</label>
+            <input
+                type="file"
+                name="arquivo"
+                id="arquivo"
+            /> <!-- use multiple para permitir o envio de 2 ou mais arquivos -->
+        </div>
+
+            <br/>
+
+        <div> <!-- tipo oculto -->
+            <input type="hidden" value="Conteúdo oculto" />
+        </div>
+
+            <br/>
+
+        <div> <!-- tipo caixa de seleção -->
+            <!-- use checked para deixar uma opcao marcada -->
+            <p>Botão checkbox</p>
+            <input type="checkbox" name="veiculo1" id="veiculo1" value="Bicicleta"
+            /> <label for="veiculo1">Bicicleta</label> <br/>
+            <input type="checkbox" name="veiculo2" id="veiculo2" value="Carro"
+            /> <label for="veiculo2">Carro</label> <br/>
+            <input type="checkbox" name="veiculo3" id="veiculo3" value="Moto"
+            /> <label for="veiculo3">Moto</label> <br/>
+        </div>
+
+            <br/>
+
+        <div> <!-- tipo botão rádio -->
+            <!-- USE O MESMO NAME PARA TODOS OS INPUTS RADIO  -->
+            <!-- use checked para deixar uma opcao marcada -->
+            <p>Botão radio</p>
+            <input type="radio" name="linguagem" id="ling1" value="HTML"
+            /> <label for="ling1">HTML</label> <br/>
+            <input type="radio" name="linguagem" id="ling2" value="CSS"
+            /> <label for="ling2">CSS</label> <br/>
+            <input type="radio" name="linguagem" id="ling3" value="JavaScript"
+            /> <label for="ling3">JavaScript</label> <br/>
+        </div>
+
+            <br/>
+
+        <div>
+            <label for="produtos">Produtos</label>
+            <!--
+                use multipe na tag de abertura para permitir a seleção
+                de 2 ou mais itens
+            -->
+            <select name="produtos" id="produtos"> <!-- multipe -->
+                <!-- optgroup é opcional -->
+                <optgroup label="Alimentos">
+                    <option value="Arroz">Arroz</option>
+                    <option value="Feijão">Feijão</option>
+                    <option value="Leite">Leite</option>
+                    <option value="Açúcar" selected>Açúcar</option>
+                </optgroup>
+                    <option value="Teste">Teste</option>
+            </select>
+        </div>
+
+            <br/> <br/> <br/>
+
+        <div>
+            <input
+                type="submit"
+                name="btn-enviar"
+                id="btn-enviar"
+                value="Enviar"
+            />
+            &nbsp;
+            <input
+                type="reset"
+                name="btn-limpar"
+                id="btn-limpar"
+                value="Limpar"
+            />
+
+        </div>
+
+   </form>
+    
+</body>
+</html>
