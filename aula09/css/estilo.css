@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+#tela_login {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+figure, h1 {
+    text-align: center;
+}
+
+img {
+    -o-user-drag: none;
+    -ms-user-drag: none;
+    -moz-user-drag: none;
+    -webkit-user-drag: none;
+}
+
+h1 {
+    margin-bottom: 1rem; /* 16px */
+}
+
+form {
+    text-align: center;
+}
+
+label {
+    display: inline-block;
+    width: 70px;
+}
+
+input {
+    font-size: 1.05rem;
+    border-radius: 5px;
+    border: 1px solid #cecece;
+    padding: 5px;
+}
+
+input {
+    font-size: 1.05rem;
+    border-radius: 5px;
+    border: 1px solid #ececec;
+    padding: 5px;
+}
+
+input[type=email], input[type=password] {
+    width: 250px;
+    height: 2.5rem;
+    margin-bottom: rem;
+}
+
+input[type=submit], input[type=reset] {
+    width: 130px;
+    height: 35px;
+}
+
+input[type=submit] {
+    background: #1D495F;
+    color: #fff;
+}
+
+input[type=reset] {
+    background: #ff6600;
+    color: #fff;
+}
+
+input[type=submit]:hover {
+    background: #cecece;
+    color: #1D495F;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+input[type=reset]:hover {
+    background: #cecece;
+    color: #ff6600;
+    cursor: pointer;
+    font-weight: bolder;
+}
