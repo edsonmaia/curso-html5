@@ -51,6 +51,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- compatibilidade com IE -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- área visivel largura -->
     <title>Projeto 01</title> <!-- título da página -->
+    <!-- links para estilos css -->
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
 </head> <!-- fim do head - cabeça html -->
 
 <body> <!-- abertura do body - corpo html -->
