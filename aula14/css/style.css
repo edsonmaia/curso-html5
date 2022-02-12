@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+header#topo {
+    background: rgba(255,255,255,0.95);
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid #ccc;
+}
+
+#topo {
+    width: 100%;
+    margin: 0 auto;
+    height: 8vh;
+    line-height: 8vh;
+
+    display: grid;
+    grid-template-areas: 'logo menu-superior';
+}
+
+#logo {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    color: #8D1FBC;
+
+    grid-area: 'logo';
+}
+
+#menu-superior {
+    text-align: right;
+
+    grid-area: 'menu-superior';
+}
+
+#menu-superior ul li, #menu-inferior ul li, #acoes-na-postagem ul li {
+    display: inline-block;
+}
+
+#menu-superior a, #menu-inferior a, #acoes-na-postagem a {
+    color: #191919;
+    font-size: 1.75rem;
+    padding: 0.75rem;
+}
+
+#menu-superior a:hover, #menu-inferior a:hover, #acoes-na-postagem a:hover {
+    color: #8D1FBC;
+}
+
+.topo-da-postagem {
+    margin: 0 1rem 1rem 1rem;
+    /* border: 1px solid #f1f1f1; */
+
+    display: grid;
+    grid-template-columns: 8% 82% 10%;
+    grid-template-areas: 'icone nome-perfil botao';
+}
+
+/* Article da postagem */
+.postagem {
+    width: 100%;   
+}
+
+/* Foto do Perfil */
+#foto-perfil {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 50%;
+
+    grid-area: 'icone';
+}
+
+/* Div com h2+span nome do perfil e local */
+#quem-postou {
+    grid-area: 'nome-perfil';
+}
+
+/* Nome do Perfil que postou */
+.topo-da-postagem h2 {
+    font-size: 1rem;
+}
+
+/* Texto da Localizacao */
+.topo-da-postagem span {
+    font-size: 0.75rem;
+}
+
+/* botao ... */
+#opcoes-da-postagem {
+    line-height: 8vh;
+    text-align: right;
+    margin-right: 1rem;
+
+    grid-area: 'botao';
+}
+
+/* Section do feed */
+#feed {
+    padding-top: 1rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+article {
+    margin-bottom: 2rem;
+}
+
+/* Div com figure e img */
+.conteudo-da-postagem {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: 'foto';
+}
+
+.conteudo-da-postagem {
+    text-align: center;
+}
+
+/* Imagem da postagem */
+.conteudo-da-postagem img {
+    height: 75vh;
+
+    grid-area: 'foto';
+}
+
+@media (max-width: 960px) {
+    .conteudo-da-postagem img {
+        width: 80%;
+
+        object-fit: contain;
+        object-position: bottom;
+    }
+    .conteudo-da-postagem {
+        width: 100%;
+    }
+    .topo-da-postagem {
+        grid-template-columns: 15% 80% 5%;
+    }
+}
+
+.rodape-da-postagem p {
+    margin: 0.75rem;
+}
+
+/* Menu Inferior os 5 botoes */
+#menu-inferior {
+    border-top: 1px solid #cecece;
+    background: rgba(255,255,255,0.9);
+    text-align: center;
+    margin-top: 2rem;
+
+    position: sticky;
+    bottom: 0;
+}
+
+/* MENU DROPDOWN */
+
+/* Estilo do Botao Dropdown */
+.dropbtn {
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.dropbtn a {
+    color: #191919;
+}
+
+.dropbtn a:hover, .dropdown-content a:hover {
+    color: #8D1FBC;
+}
+
+/* <div> - usada para posicionar o conteudo do dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+/* Conteudo do dropdown. Por padrao esconder */
+.dropdown-content {
+    font-size: 0.85rem;
+    display: none; /* aqui a gente esconde ele */
+    right: 0; /*  */
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 180px;
+    box-shadow: 0px 6px 8px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+/* Links dentro do dropdown */
+.dropdown-content a {
+    color: #191919;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    display: block;
+}
+
+/* Mudar cor dos links quando passamos o mouse por cima */
+.dropdown-content a:hover { background-color: #f1f1f1 }
+  
+/* Mostrar ou exibir o menu dropdown */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
